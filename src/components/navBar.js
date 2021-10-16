@@ -4,7 +4,8 @@ import navBarStyle from "../styles/navBar";
 import Icon from "react-native-vector-icons/FontAwesome";
 Icon.loadFont();
 
-const NavBar = () => {
+const NavBar = props => {
+  console.log(props);
   return (
     <View style={navBarStyle.navBar}>
       {/*Home*/}
