@@ -1,5 +1,5 @@
 import React from "react";
-import {View, StyleSheet, ScrollView} from "react-native";
+import {View, ScrollView} from "react-native";
 import Background from "../components/background";
 import Box from "../components/box";
 import NavBar from "../components/navBar";
@@ -52,7 +52,7 @@ const data = [
   },
 ];
 
-const Home = () => {
+const Home = ({navigation}) => {
   return (
     <View>
       {/* <Background />
@@ -64,7 +64,7 @@ const Home = () => {
           flexWrap: "wrap",
         }}>
         {data.map(elem => (
-          <Box key={elem.id} category={elem.title} />
+          <Box navigation={navigation} key={elem.id} id={elem.id} category={elem.title} />
         ))}
       </ScrollView> */}
       <CategoryPage />

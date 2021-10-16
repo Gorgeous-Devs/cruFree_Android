@@ -4,9 +4,9 @@ import {View, Text, StyleSheet, Dimensions} from "react-native";
 const windowHeight = Dimensions.get("window").height;
 const windowWidth = Dimensions.get("window").width;
 
-const Logo = ({isNav}) => (
+const Logo = ({size}) => (
   <View>
-    <Text style={[logoStyles.logoText], isNav ? logoStyles.navLogoText: ''}>CruFree</Text>
+    <Text style={{...logoStyles.logoText, fontSize: size}}>CruFree</Text>
   </View>
 );
 
@@ -25,7 +25,7 @@ const logoStyles = StyleSheet.create({
     fontSize: 24,
     color: "#FFFFFF",
     fontWeight: "700",
-  }
+  },
 });
 
 export default Logo;

@@ -10,7 +10,7 @@ import Logo from "./logo";
 const Background = () =>
  (
    <View style={backgroundStyle.bgStyle}>
-     <Logo/>
+     <Logo size={36}/>
      <SearchBar/>
   </View>
  );
