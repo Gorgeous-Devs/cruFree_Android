@@ -12,8 +12,6 @@ target 'crufree_fe_cp' do
     :hermes_enabled => false
   )
 
-  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
-
   target 'crufree_fe_cpTests' do
     inherit! :complete
     # Pods for testing

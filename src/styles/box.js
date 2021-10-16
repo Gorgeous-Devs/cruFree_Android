@@ -7,7 +7,7 @@ const boxStyle = StyleSheet.create({
     width: windowWidth / 2.5,
     height: windowWidth / 2.5,
     fontWeight: 500,
-    fontFamily: 'Roboto',
+
     fontSize: 18,
     borderRadius: 10,
     justifyContent: 'center',

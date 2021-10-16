@@ -11,6 +11,9 @@ const navBarStyle = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
+    justifySelf: 'flex-end',
+    position: 'absolute',
+    bottom: 0
   },
   navButtons: {
     height: windowHeight / 14,

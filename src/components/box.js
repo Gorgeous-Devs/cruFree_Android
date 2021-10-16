@@ -2,16 +2,19 @@ import React from 'react';
 import {
   View,
   Text,
+  TouchableOpacity
 } from 'react-native';
 import boxStyle from '../styles/box';
 
-const Box = ({category}) => {
+const Box = ({category, navigation, id}) => {
   return (
-    <View style={[boxStyle.boxContainer, category === 'Beauty' ? boxStyle.beautyBox : '']}>
+    <TouchableOpacity onPress={() => navigation.navigate('Detail', {
+      itemId: id,
+    })} style={[boxStyle.boxContainer, category === 'Beauty' ? boxStyle.beautyBox : '']}>
       <Text>
         {category}
       </Text>
-    </View>
+    </TouchableOpacity>
   )
 }
 

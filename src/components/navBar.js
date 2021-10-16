@@ -2,6 +2,7 @@ import React from "react";
 import {View, Text, TouchableOpacity} from "react-native";
 import navBarStyle from "../styles/navBar";
 import Icon from "react-native-vector-icons/FontAwesome";
+Icon.loadFont();
 
 const NavBar = () => {
   return (
