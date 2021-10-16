@@ -2,11 +2,8 @@ import {StyleSheet} from "react-native";
 
 const searchBarStyle = StyleSheet.create({
   sbWrapper: {
-    backgroundColor: "#FFFFFF",
     width: "90%",
-    borderRadius: 10,
-    paddingVertical: 4,
-    paddingHorizontal: 20,
+
     margin: 16,
     fontSize: 18,
     shadowColor: "#000",
@@ -14,6 +11,24 @@ const searchBarStyle = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 2,
     elevation: 5,
+  },
+  sbInput: {
+    width: "100%",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 10,
+    paddingLeft: 15,
+    paddingRight: 15,
+    color: "#000",
+  },
+  sbButton: {
+    position: "absolute",
+    right: 0,
+    top: 0,
+    height: "100%",
+    width: 45,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 
