@@ -55,7 +55,7 @@ const data = [
 const Home = ({navigation}) => {
   return (
     <View>
-      {/* <Background />
+      <Background />
       <ScrollView
         style={boxWrapperStyle.boxWrapper}
         contentContainerStyle={{
@@ -64,10 +64,15 @@ const Home = ({navigation}) => {
           flexWrap: "wrap",
         }}>
         {data.map(elem => (
-          <Box navigation={navigation} key={elem.id} id={elem.id} category={elem.title} />
+          <Box
+            navigation={navigation}
+            key={elem.id}
+            id={elem.id}
+            category={elem.title}
+          />
         ))}
-      </ScrollView> */}
-      <CategoryPage />
+      </ScrollView>
+
       {/* <NavBar /> */}
     </View>
   );
