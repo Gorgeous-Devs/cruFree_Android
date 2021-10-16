@@ -1,7 +1,9 @@
-import React from 'react';
-import {View, StyleSheet, ScrollView} from 'react-native';
-import Background from '../components/background';
-import Box from '../components/box';
+import React from "react";
+import {View, StyleSheet, ScrollView} from "react-native";
+import Background from "../components/background";
+import Box from "../components/box";
+import NavBar from "../components/navBar";
+import boxWrapperStyle from "../styles/boxWrapper";
 
 const data = [
   {
@@ -47,32 +49,26 @@ const data = [
   {
     id: 11,
     title: "Beauty",
-  }
+  },
 ];
-
 
 const Home = () => {
   return (
-    <View style={{height: '100%'}}>
+    <View style={{height: "100%"}}>
       <Background />
       <ScrollView
         style={boxWrapperStyle.boxWrapper}
         contentContainerStyle={{
-          flexDirection: 'row',
+          flexDirection: "row",
           flexGrow: 1,
-          flexWrap: 'wrap',
+          flexWrap: "wrap",
         }}>
         {data.map(elem => (
-          <Box key={elem.id} category={elem.title}/>
+          <Box key={elem.id} category={elem.title} />
         ))}
       </ScrollView>
+      <NavBar />
     </View>
   );
 };
-const boxWrapperStyle = StyleSheet.create({
-  boxWrapper: {
-    backgroundColor: '#BDDC89',
-    height: '100%',
-  },
-});
 export default Home;
