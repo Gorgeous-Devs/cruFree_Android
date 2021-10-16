@@ -1,1 +1,1 @@
-crufree_fe_cp
+CRUELTY FREE APP
