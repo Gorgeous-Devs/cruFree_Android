@@ -6,9 +6,14 @@ import {
 import searchBarStyle from '../styles/searchBar';
 
 const SearchBar = () => {
+  const [searchVal, setSearchVal] = useState('');
   return (
     <View style={searchBarStyle.sbWrapper}>
-      <TextInput placeholder="Search..."/>
+      <TextInput
+        placeholder="Search..."
+        value={searchVal}
+        onChange={e => setSearchVal(e.target.value)}
+      />
     </View>
   )
 }
