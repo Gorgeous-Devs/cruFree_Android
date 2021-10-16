@@ -50,6 +50,7 @@ const data = [
   }
 ];
 
+
 const Home = () => {
   return (
     <View style={{height: '100%'}}>
@@ -68,12 +69,10 @@ const Home = () => {
     </View>
   );
 };
-
 const boxWrapperStyle = StyleSheet.create({
   boxWrapper: {
     backgroundColor: '#BDDC89',
     height: '100%',
   },
 });
-
 export default Home;
