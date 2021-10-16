@@ -4,7 +4,7 @@ import Background from "../components/background";
 import Box from "../components/box";
 import NavBar from "../components/navBar";
 import boxWrapperStyle from "../styles/boxWrapper";
-
+import CategoryPage from "./CategoryPage";
 const data = [
   {
     id: 1,
@@ -54,8 +54,8 @@ const data = [
 
 const Home = () => {
   return (
-    <View style={{height: "100%"}}>
-      <Background />
+    <View>
+      {/* <Background />
       <ScrollView
         style={boxWrapperStyle.boxWrapper}
         contentContainerStyle={{
@@ -66,8 +66,9 @@ const Home = () => {
         {data.map(elem => (
           <Box key={elem.id} category={elem.title} />
         ))}
-      </ScrollView>
-      <NavBar />
+      </ScrollView> */}
+      <CategoryPage />
+      {/* <NavBar /> */}
     </View>
   );
 };

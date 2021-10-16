@@ -8,7 +8,6 @@ const searchBarStyle = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     margin: 16,
-    fontFamily: 'Roboto',
     fontSize: 18,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
