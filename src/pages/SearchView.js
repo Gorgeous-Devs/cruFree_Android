@@ -1,7 +1,9 @@
 import React from "react";
+import {SafeAreaView, StatusBar, Image} from "react-native";
 import {Box, Text} from "../components/base";
-import {SafeAreaView, StatusBar, View} from "react-native";
-import {colors} from "../utils/theme";
+import {SearchInput} from "../components/elements";
+import {colors, sizes} from "../utils/theme";
+import logo from "../assets/images/CrueFree.png";
 
 export default function SearchView() {
   return (
@@ -12,8 +14,24 @@ export default function SearchView() {
         barStyle="light-content"
         showHideTransition="slide"
       />
-      <Box width="100%" height={200} bg={colors.main}>
-        <Text>AAAA</Text>
+      <Box
+        width="100%"
+        height="35%"
+        bg={colors.main}
+        position="relative"
+        py={2}>
+        <Box alignItems="center">
+          <Image source={logo} resizeMode="contain" style={{height: 170}} />
+          <Text
+            color={colors.white}
+            fontSize={sizes.fontsize.xl}
+            fontWeight="bold">
+            CrueFree
+          </Text>
+        </Box>
+        <Box position="absolute" mx="auto" width="100%" bottom={-30}>
+          <SearchInput />
+        </Box>
       </Box>
     </SafeAreaView>
   );
