@@ -1,5 +1,6 @@
-import { TextInput } from "react-native";
+import {TextInput} from "react-native";
 import styled from "styled-components/native";
+import {colors} from "../../utils/theme";
 import {
   compose,
   color,
@@ -24,8 +25,12 @@ const Input = styled(TextInput)(
     borderRadius,
     position,
     background,
-    typography
-  )
+    typography,
+  ),
 );
+
+Input.defaultProps = {
+  placeholderTextColor: colors.icons,
+};
 
 export default Input;
