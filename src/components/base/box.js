@@ -1,4 +1,4 @@
-import { View } from "react-native";
+import {View} from "react-native";
 import styled from "styled-components/native";
 import {
   compose,
@@ -25,8 +25,8 @@ const Box = styled(View)(
     position,
     background,
     display,
-    boxShadow
-  )
+    boxShadow,
+  ),
 );
 
 export default Box;
