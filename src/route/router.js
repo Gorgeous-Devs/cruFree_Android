@@ -27,3 +27,26 @@ export const router = [
   },
   {key: 5, title: "Bilgi", component: Home, options: {}},
 ];
+
+export const tabBarRouter = [
+  {
+    id: 1,
+    title: "Home",
+    component: Home,
+    options: {},
+  },
+
+  {
+    id: 2,
+    title: "Search",
+    component: SearchView,
+    options: {},
+  },
+
+  {
+    id: 3,
+    title: "Info",
+    component: Home,
+    options: {},
+  },
+];
